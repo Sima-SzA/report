@@ -1,5 +1,5 @@
 
-int bt=0;
+int bt=0; // تعریف متغیر برای کلید
 int a=8;
 int led = 13;
 
@@ -10,10 +10,13 @@ void setup(){
 
 void loop(){
   
-  int b=digitalRead(a);
-if (b==HIGHT)
+  int b=digitalRead(a);//خواندن چگونگی a
+if (b==HIGHT)//اگر فعال بود لاتپ روشن
 {
    digitalWrite(led,HIGHT);
 }
-
- ELSE
+else
+{
+digitaWrite( led , LOW );//لامپ خاموش
+}
+}
